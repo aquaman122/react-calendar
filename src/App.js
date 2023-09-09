@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
 import './App.css';
-import Calendar from 'react-calendar';
+import ReactCalendar from './component/ReactCalendar';
 
 function App() {
-  const [value, onChange] = useState(new Date());
-  
+
   return (
     <>
-      <Calendar onChange={onChange} value={value} />
+      <div className='container'>
+        <ReactCalendar />
+      </div>
     </>
   );
 }
